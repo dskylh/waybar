@@ -1,0 +1,123 @@
+@define-color base00 #191724;
+@define-color base01 #191724;
+@define-color base02 #26233a;
+@define-color base03 #6e6a86;
+@define-color base04 #908caa;
+@define-color base05 #e0def4;
+@define-color base06 #e0def4;
+@define-color base07 #f8f8f8;
+@define-color base08 #eb6f92;
+@define-color base09 #f6c177;
+@define-color base0A #ebbcba;
+@define-color base0B #31748f;
+@define-color base0C #9ccfd8;
+@define-color base0D #7cafc2;
+@define-color base0E #c4a7e7;
+@define-color base0F #a16946;
+
+* {
+	transition: none;
+	box-shadow: none;
+}
+
+#waybar {
+	font-family: 'Fira Code Nerd Font';
+	font-size: 1.2em;
+	font-weight: 400;
+	color: @base04;
+	background: @base01;
+}
+
+#workspaces {
+	margin: 0 4px;
+}
+
+#workspaces button {
+	margin: 4px 0;
+	padding: 0 4px;
+	color: @base05;
+}
+
+#workspaces button.visible {}
+
+#workspaces button.active {
+	border-radius: 4px;
+	background-color: @base02;
+}
+
+#workspaces button.urgent {
+	color: rgba(238, 46, 36, 1);
+}
+
+#tray {
+	margin: 4px 4px 4px 4px;
+	border-radius: 4px;
+	background-color: @base02;
+}
+
+#tray * {
+	padding: 0 6px;
+	border-left: 1px solid @base00;
+}
+
+#tray *:first-child {
+	border-left: none;
+}
+
+#custom-notification,
+#custom-media,
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#idle_inhibitor,
+#backlight,
+#custom-storage,
+#custom-updates,
+#custom-weather,
+#custom-mail,
+#clock,
+#temperature,
+#bluetooth,
+#keyboard-state {
+	margin: 4px 2px;
+	padding: 0 6px;
+	background-color: @base02;
+	border-radius: 4px;
+	min-width: 20px;
+}
+
+#custom-notification.dnd-none,
+#custom-notification.dnd-inhibited-none {
+	padding-right: 12px;
+}
+
+#custom-notification {
+	padding-right: 8px;
+}
+
+#pulseaudio.muted {
+	color: @base0F;
+}
+
+#pulseaudio.bluetooth {
+	color: @base0C;
+}
+
+#clock {
+	margin-left: 0px;
+	margin-right: 4px;
+	background-color: transparent;
+}
+
+#temperature.critical {
+	color: @base0F;
+}
+
+#window {
+	font-size: 0.9em;
+	font-weight: 400;
+	font-family: sans-serif;
+}
