@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 34, // Waybar height (to be removed for auto height)
+    //"height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -210,6 +210,7 @@
       "format-connected": " {device_alias}",
       "format-disabled": "󰂲", // an empty format will hide the module
       "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+      "format-no-controller": "󰂲",
       // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
       "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
